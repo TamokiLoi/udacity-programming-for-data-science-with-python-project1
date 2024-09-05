@@ -1,6 +1,4 @@
-title,rental_rate
-Chamber Italian,4.99
-Airport Pollock,4.99
-Bright Encounters,4.99
-Grosse Wonderful,4.99
-Ace Goldfinger,4.99
+length_category,film_count
+Long,457
+Medium,439
+Short,104
