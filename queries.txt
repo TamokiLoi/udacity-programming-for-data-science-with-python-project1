@@ -1,0 +1,33 @@
+1. How many films are there in each category?
+SELECT c.name AS category, COUNT(fc.film_id) AS filmcount
+FROM category c
+JOIN film_category fc ON c.category_id = fc.category_id
+GROUP BY c.name
+ORDER BY filmcount DESC;
+
+
+2. What are the total payments made by each customer?
+SELECT c.customer_id, c.first_name, c.last_name, SUM(p.amount) AS TotalPayment
+FROM customer c
+JOIN payment p ON c.customer_id = p.customer_id
+GROUP BY c.customer_id
+ORDER BY TotalPayment DESC;
+
+
+3. What are the top 5 longest films in the dataset?
+SELECT title, length
+FROM film
+ORDER BY length DESC
+LIMIT 5;
+
+
+4. What are the top 5 films with the highest rental rates?
+SELECT title, rental_rate
+FROM film
+ORDER BY rental_rate DESC
+LIMIT 5;
+
+
+
+5.
+
